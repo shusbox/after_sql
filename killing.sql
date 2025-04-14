@@ -1,6 +1,7 @@
 use team_1_2;
 
 # customer 생성
+
 create table Customer(
 	custid int primary key,
 	cname varchar(10) not null,
