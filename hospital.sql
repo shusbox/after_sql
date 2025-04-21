@@ -50,7 +50,7 @@ select * from hospital;
 select * from patient;
 select * from appointment;
 
-# 환자별 가장 최근 예약 정보를 출력하시오.
-select p.name, max(a.reservation_datetime)
+# 예약 환자 중 ‘피부 트러블’을 증상으로 입력한 환자의 병원명과 예약일시를 출력하시오.
+select h.name, a.reservation_datetime
 from hospital h join appointment a on h.hospital_id = a.hospital_id join patient p on a.patient_id = p.patient_id
-group by p.name;
+where p.symptoms = '피부 트러블';
