@@ -1,4 +1,4 @@
-use study_1_2;
+sdfsdfuse study_1_2;
 
 CREATE TABLE hospital (
     hospital_id INT PRIMARY KEY,   -- 병원 ID
